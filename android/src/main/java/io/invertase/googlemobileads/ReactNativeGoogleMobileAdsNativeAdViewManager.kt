@@ -33,7 +33,7 @@ class ReactNativeGoogleMobileAdsNativeAdViewManager(
   reactContext: ReactApplicationContext
 ) : ViewGroupManager<ReactNativeGoogleMobileAdsNativeAdView>(reactContext),
   RNGoogleMobileAdsNativeViewManagerInterface<ReactNativeGoogleMobileAdsNativeAdView> {
-  private val delegate: ViewManagerDelegate<ReactNativeGoogleMobileAdsNativeAdView> = RNGoogleMobileAdsNativeViewManagerDelegate(this)
+  private val delegate: ViewManagerDelegate<ReactNativeGoogleMobileAdsNativeAdView> = ViewManagerDelegate<ReactNativeGoogleMobileAdsNativeAdView>
 
   override fun getDelegate(): ViewManagerDelegate<ReactNativeGoogleMobileAdsNativeAdView> = delegate
 
